@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Get Coins</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- Header -->
+  <div class="top">
+    <h2>Get Coins</h2>
+  </div>
+
+  <!-- Profile -->
+  <div class="profile">
+    <img src="https://via.placeholder.com/50">
+    <div>
+      <h3>Recharge</h3>
+      <p>🪙 773,500</p>
+    </div>
+  </div>
+
+  <!-- Username Input -->
+  <input id="searchUser" placeholder="Enter username (e.g mrbeast)" oninput="findUser()">
+
+  <!-- User Preview -->
+  <div id="userCard" class="user-card hidden">
+    <h3>@username</h3>
+    <p>Followers • Likes</p>
+  </div>
+
+  <!-- Recharge -->
+  <div class="section">
+    <h3>Recharge</h3>
+    <p class="save">Save around 25% with a lower third-party service fee.</p>
+
+    <div class="grid">
+      <div class="coin active" onclick="select(this,30,'$0.31')">🪙 30<br><span>$0.31</span></div>
+      <div class="coin" onclick="select(this,350,'$3.65')">🪙 350<br><span>$3.65</span></div>
+      <div class="coin" onclick="select(this,700,'$7.25')">🪙 700<br><span>$7.25</span></div>
+      <div class="coin" onclick="select(this,1400,'$14.49')">🪙 1400<br><span>$14.49</span></div>
+      <div class="coin" onclick="select(this,3500,'$36.2')">🪙 3500<br><span>$36.2</span></div>
+      <div class="coin">Custom</div>
+    </div>
+  </div>
+
+  <!-- Invite -->
+  <div class="invite">
+    👏 Invite & Get Rewards
+    <p>Check out this new feature!</p>
+  </div>
+
+  <!-- Buy Button -->
+  <button class="buy" onclick="sendToUser()">Buy for $0.31</button>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
